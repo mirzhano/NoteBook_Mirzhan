@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:background="#8BC34A"
+    android:padding="9dp"
+    tools:ignore="MissingClass">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_card"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/mir">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#CDDC39">
+
+        <TextView    android:id="@+id/name_surname_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Mirzhan Okenova"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+        <TextView    android:id="@+id/tel_number_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+996 555625125"
+            android:textColor="@color/purple_700"
+            android:textSize="22sp" />
+        <EditText
+            android:id="@+id/my_message"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#DAB1B1"
+            android:visibility="gone"
+            android:backgroundTint="#682D2D"
+            android:hint="write here message:"/>
+
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/dropdown_menu"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:background="@drawable/baseline_menu_24"
+        android:layout_gravity="end"
+        android:layout_marginStart="4dp"
+        android:contentDescription="Drop Down Menu"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+
+</LinearLayout>

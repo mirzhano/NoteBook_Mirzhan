@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_input"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mir" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_load_photo"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:text="load foto"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:cornerRadius="26dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="#435114BD"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/edit_name_surname"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:background="#C2F0F6"
+        android:layout_margin="12dp"
+        android:hint="Name and Surname:"/><EditText
+        android:id="@+id/edit_telNubmer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:background="#C2F0F6"
+        android:layout_margin="12dp"
+        android:hint="Tel number:"
+        android:inputType="phone"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:cornerRadius="26dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="#435114BD"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
